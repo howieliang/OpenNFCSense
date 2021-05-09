@@ -1,5 +1,5 @@
-# OpenNFCSense
-Open NFCSense API for the Processing programming environment.
+# OpenNFCSense API
+Open-source API of NFCSense for the Processing programming environment (http://processing.org/).
 
 by Dr. Rong-Hao Liang (Last update: May 9, 2021)
 
@@ -11,26 +11,34 @@ by Dr. Rong-Hao Liang (Last update: May 9, 2021)
 - [PDF](https://dl.acm.org/doi/pdf/10.1145/3411764.3445214)
 
 ## Download (/download)
-Download the OpenNFCSense-1 in zip format.
+Download the OpenNFCSense4P-1 in zip format.
 
 ### Installation
 Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder.
 
-## Arduino code (/arduino): This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino
+## Arduino code (/arduino)
+This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino
 ![Hardware Configuration](/figures/hardware.png)
 
-## Cheatsheet (/cheatsheet): The One-page Summary of how the algorithm works
+## Cheatsheet (/cheatsheet)
+The One-page Summary of how the algorithm works
 [![NFCSense Cheatsheet V1](figures/NFCSenseCheatSheet_v1.png)](figures/NFCSenseCheatSheet_v1.png)
 
-## Documentation: The full documentation will be coming soon!
+## Documentation
+The full documentation will be coming soon!
 
-## Source (/src): The source code of the OpenNFCSense library (**GNU GPLv3 copyleft license**)
+## Source (/src)
+The source code of the OpenNFCSense library (**GNU GPLv3 copyleft license**)
 
-### Cite this Work: If you use this library, please cite the original NFCSense paper as the ACM format
+## Cite this Work: 
+
+If you use this library, please cite the original NFCSense paper as following
+
+- ACM format:
 ```
 Rong-Hao Liang and Zengrong Guo. 2021. NFCSense: Data-Defined Rich-ID Motion Sensing for Fluent Tangible Interaction Using a Commodity NFC Reader. In <i>Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems</i> (<i>CHI '21</i>). Association for Computing Machinery, New York, NY, USA, Article 505, 1–14. DOI:https://doi.org/10.1145/3411764.3445214
 ```
-or the bibtex format
+- bibtex format:
 ```
 @inproceedings{10.1145/3411764.3445214,
 author = {Liang, Rong-Hao and Guo, Zengrong},
@@ -51,7 +59,7 @@ series = {CHI '21}
 }
 ```
 
-## License
+## License (GNU GPLv3 copyleft license)
 OpenNFCSense is an open-source software under the terms of **GNU GPLv3 copyleft license**. Anyone can use this, for any purpose. Since a **copyleft** license requires that the project developed around your software be distributed under the same (or similar) license, you must give all users of your work the freedom to carry out all of copying, distribution and modification activities if the work is based on OpenNFCSense.
 
 We also offer closed-source license which give you the ability not redistribute your software as open-source too. Contact the authors via (r.liang@tue.nl) if you are interested.
