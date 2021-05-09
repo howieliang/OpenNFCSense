@@ -3,6 +3,8 @@ Open-source API of NFCSense for the Processing programming environment (http://p
 
 by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 9, 2021)
 
+[![NFCSense Cheatsheet V1](/docs/NFCSenseCheatSheet_v1.png)](docs/NFCSenseCheatSheet_v1.png)
+
 ## Project website: 
 - [https://ronghaoliang.page/NFCSense/](https://ronghaoliang.page/NFCSense/)
 
@@ -16,13 +18,13 @@ Download the OpenNFCSense4P-1 in zip format.
 ### Installation
 Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder.
 
+## Cheatsheet (/docs)
+The 1-page Summary of how the proposed algorithm works.
+
 ## Arduino code (/arduino)
 This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino
 ![Hardware Configuration](/figures/hardware.png)
 
-## Cheatsheet (/docs)
-The 1-page Summary of how the proposed algorithm works
-[![NFCSense Cheatsheet V1](/docs/NFCSenseCheatSheet_v1.png)](docs/NFCSenseCheatSheet_v1.png)
 ### Documentation
 The full documentation will be available soon!
 
