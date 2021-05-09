@@ -21,7 +21,7 @@ This software works with a microcontroller connected to an RC522 NFC/RFID Reader
 ![Hardware Configuration](/figures/hardware.png)
 
 ## Cheatsheet (/cheatsheet)
-The One-page Summary of how the algorithm works
+The 1-page Summary of how the proposed algorithm works
 [![NFCSense Cheatsheet V1](figures/NFCSenseCheatSheet_v1.png)](figures/NFCSenseCheatSheet_v1.png)
 
 ## Documentation
