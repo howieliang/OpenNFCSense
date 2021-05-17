@@ -1,7 +1,9 @@
 # OpenNFCSense API
-Open-source API of NFCSense for the Processing programming environment (http://processing.org/).
+Open-source API of NFCSense for the Processing programming environment (http://processing.org/). Please refer to the following workflow to start experiencing the NFCSense!
 
-by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 9, 2021)
+by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 17, 2021)
+
+_Now it's V2: Basic Tutorial and Examples for each type of measurement is available!_
 
 [![NFCSense Cheatsheet V1](/docs/NFCSenseCheatSheet_v1.png)](docs/NFCSenseCheatSheet_v1.png)
 
@@ -12,18 +14,64 @@ by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 9, 2021)
 - [HTML](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445214)
 - [PDF](https://dl.acm.org/doi/pdf/10.1145/3411764.3445214)
 
-## Download (/download)
-Download the OpenNFCSense4P-1 in zip format.
+## Prerequisite (for V2)
+- 1x Arduino Uno board
+- 1x RC522 NFC reader
+- A few NFC tags (e.g., Mifare 1k, NTAG213, NTAG215)
+- A computer installed Processing and Arduino IDEs
 
-### Installation
-Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder.
+## Download (/download)
+The OpenNFCSense API V2 of the Processing Library (OpenNFCSense4P-2.zip) in zip format.
+
+### Install the processing library - OpenNFCSense API
+Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder. Then, Restart your Processing software. New examples can be found in the processing library.
+
+## Preparation: Upload the Arduino code (/arduino) and Connect the Reader
+- Upload the arduino code to your Arduino board first! This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino.
+- Connect the RC522 NFC reader to the Arduino board as follows (via the Arduino's SPI)
+![Hardware Configuration](/figures/hardware.png)
+
+## Use the OpenNFCSense API
+### e1_SingleTagRotation.pde
+- Open the example e1_SingleTagRotation
+- Attach an NFC tag to anything that spins, such as a fidget spinner.
+- Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
+- Open the data/tagProfile.csv in the examples' folder, replace the UID with yours, save the CSV file.
+- Run the processing sketch again, spin the your spinner, and then you will see the speed shown on the screen as "Recent tag: [Label] is spinning at ? Hz".
+- In the data/tagProfile.csv, You may replace the "Black spinner" label to any name (avoid using comma). You can make another row with the same format to be able to recognize multiple spinners!
+
+### e2_TagSequence.pde
+- Open the example e2_TagSequence
+- Attach an NFC tag to the bottom of any objects, such as a duplo block that has a letter printed on its surface.
+- Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Then, close the processing sketch.
+- Open the data/tagProfile.csv in the examples' folder, replace the UID with yours, save the CSV file.
+- Run the processing sketch again, scan your object, and then you will see object shown in list of a recent tag.
+- In the data/tagProfile.csv, You may replace the "A" label to any name (avoid using comma). Likewise, you add the 2nd, 3rd, and more object's UIDs to the CSV profile. Save the profile and run the processing sketch again, and your reader should be able to read all of them.
+- The list of "recent tag" will be cleared up when the reader does not read a new tag for 1000 ms (1 s) by default. You may change it to 2 seconds by setting up a parameter to the constructor as `nfcs = new OpenNFCSense4P(this, "demo.csv", 300, 300, 2000)'' to set the TTL timer2 to 2000.`
+
+### e3_CompoundRotation
+- TBD
+
+### e4_CompoundLinear
+- TBD
+
+### e5_SingleTagHovering
+- TBD
+
+### e6_SingleTagTilted
+- TBD
+
+### e7_SingleTagSliding
+- TBD
+
+### e8_Demo
+- TBD
+
+### e0_App_Boilerplate
+- TBD
 
 ## Cheatsheet (/docs)
 The 1-page Summary of how the proposed algorithm works.
-
-## Arduino code (/arduino)
-This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino
-![Hardware Configuration](/figures/hardware.png)
 
 ### Documentation
 The full documentation will be available soon!
