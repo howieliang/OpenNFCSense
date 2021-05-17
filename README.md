@@ -3,14 +3,14 @@ Open-source API of NFCSense for the Processing programming environment (http://p
 
 by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 17, 2021)
 
-_Now it's V2: Basic Tutorial and Examples for each type of measurement is available!_
+_Now it's **V2: Basic Tutorial and Examples** are available!_
 
-[![NFCSense Cheatsheet V1](/docs/NFCSenseCheatSheet_v1.png)](docs/NFCSenseCheatSheet_v1.png)
+[![NFCSense Cheatsheet](/docs/NFCSenseCheatSheet_v1.png)](docs/NFCSenseCheatSheet_v1.png)
 
-## Project website: 
+## NFCSense Project website: 
 - [https://ronghaoliang.page/NFCSense/](https://ronghaoliang.page/NFCSense/)
 
-## Open Access Paper at ACM Digital Library: 
+### Check the Open Access Paper at ACM Digital Library: 
 - [HTML](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445214)
 - [PDF](https://dl.acm.org/doi/pdf/10.1145/3411764.3445214)
 
