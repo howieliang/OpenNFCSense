@@ -32,24 +32,24 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 ![Hardware Configuration](/figures/hardware.png)
 
 ## Use the OpenNFCSense API by Examples
-### e1_SingleTagRotation.pde
-- Open the example e1_SingleTagRotation
+### e1_SingleTagRotation
+- Open the example e1_SingleTagRotation.pde
 - Attach an NFC tag to anything that spins, such as a fidget spinner.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of "Black spinner" with yours, save the CSV file.
 - Run the processing sketch again, spin the your spinner, and then you will see the object info and the rotation frequecy shown on the screen as "Recent tag: [Label] is spinning at ? Hz".
 - In the data/tagProfile.csv, You may replace the "Black spinner" label to any name (avoid using comma). You can make another row with the same format to be able to recognize multiple spinners!
 
-### e2_SingleTagSwinging.pde
-- Open the example e2_SingleTagSwinging
+### e2_SingleTagSwinging
+- Open the example e2_SingleTagSwinging.pde
 - Attach an NFC tag to anything that swings, such as a finger.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of "Swing" with yours, save the CSV file.
 - Run the processing sketch again, spin the your spinner, and then you will see the object info and the rotation frequecy shown on the screen as "Recent tag: [Label] is swining at ? Hz".
 - In the data/tagProfile.csv, You may replace the "Swing" label to any name (avoid using comma). You can make another row with the same format to be able to recognize swinging objects!
 
-### e3_TagSequence.pde
-- Open the example e3_TagSequence
+### e3_TagSequence
+- Open the example e3_TagSequence.pde
 - Attach an NFC tag to the bottom of any objects, such as a duplo block that has a letter printed on its surface. Maintain z=8-25mm (for Mifare 1k or NTAG 213/215 tags) distance between the tag and the reader with an optional linear track for reliable tracking.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Then, close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID with yours, save the CSV file.
@@ -58,7 +58,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - The list of "recent tag" will be cleared up when the reader does not read a new tag for 1000 ms (1 s) by default. You may change it to 2 seconds by setting up a parameter to the constructor as `nfcs = new OpenNFCSense4P(this, "demo.csv", 300, 300, 2000)` to set the TTL timer2 to 2000.
 
 ### e4_CompoundRotation
-- Open the example e4_TagSequence
+- Open the example e4_TagSequence.pde
 - Attach __3__ NFC tags to anything that spins, such as a fidget spinner. Don't let the tags overlap.
 - Run the processing sketch, scan one of the tag, and keep the first tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Then, rotate the object counterclockwisely and get the second tag's 4-byte UID. Then rotate the object counterclockwisely and get the third tag's 4-byte UID. close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of the three "white spinner" tags with yours. The first tag goes first, and then the second and the third. Save the CSV file after it's done.
@@ -66,7 +66,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - In the data/tagProfile.csv, You may replace the "White spinner" label to any name (avoid using comma). Likewise, you add more object's UIDs and label to the CSV profile. Save the profile and run the processing sketch again, and your reader should be able to read all of them.
 
 ### e5_CompoundLinear
-- Open the example e5_CompoundLinear
+- Open the example e5_CompoundLinear.pde
 - Attach __2__ NFC tags to anything that moves linearly, such as a trolley. Don't let the tags overlap. Maintain z=8-25mm (for Mifare 1k or NTAG 213/215 tags) distance between the tag and the reader with a linear track for reliable tracking.
 - Run the processing sketch, scan one of the tag, and keep the first tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Then, scan the second tag and get its 4-byte UID. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of the two "trolley" tags with yours. The first tag goes first, and then the second. Replace the number 34.0 of the both tag with the actual distance between the center of the two tags (e.g., set 38.0 when the distance is 38mm). Save the CSV file after it's done.
@@ -74,7 +74,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - In the data/tagProfile.csv, You may replace the "Trollety" label to any name (avoid using comma). Likewise, you add more object's UIDs and label to the CSV profile. Save the profile and run the processing sketch again, and your reader should be able to read all of them.
 
 ### e6_SingleTagHovering
-- Open the example e6_SingleTagHovering
+- Open the example e6_SingleTagHovering.pde
 - Attach __1__ NFC tags to the top of anything that moves linearly, such as a boat. Maintain z = 7-25 mm (for Mifare 1k or NTAG 213/215 tags) distance between the tag and the reader with a linear track for reliable tracking.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of the "boat" tags with yours. Save the CSV file after it's done.
@@ -83,7 +83,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - Likewise, you can add more object's UIDs, label, and L1 to the CSV profile. 
 
 ### e7_SingleTagSlidingHovering
-- Open the example e7_SingleTagSlidingHovering
+- Open the example e7_SingleTagSlidingHovering.pde
 - Attach __1__ NFC tags to the bottom of anything that moves linearly, such as a figurine. Maintain less than 6mm distance (for Mifare 1k or NTAG 213/215 tags) between the tag and the reader with a linear track.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of the "figurine" tags with yours. Save the CSV file after it's done.
@@ -93,7 +93,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - Likewise, you can add more object's UIDs, label, L1 and L2 to the CSV profile. 
 
 ### e8_SingleTiltedTagSliding
-- Open the example e8_SingleTiltedTagSliding
+- Open the example e8_SingleTiltedTagSliding.pde
 - Attach __1__ tilted (between 60-75 degree) NFC tags to the bottom of anything that moves linearly, such as a car. Maintain less than 22mm distance (for Mifare 1k or NTAG 213/215 tags) between the tag's center and the reader with a linear track.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
 - Open the data/tagProfile.csv in the examples' folder, replace the UID of the "Car" tags with yours. Save the CSV file after it's done.
@@ -103,12 +103,12 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - Likewise, you can add more object's UIDs, label, L1 to the CSV profile. 
 
 ### e9_Demo
-- Open the example e9_Demo
+- Open the example e9_Demo.pde
 - Copy the lines that you just created from the tagProfile.csv files in the previous examples to the demo.csv.
 - Run the processing sketch, then every object's movement mode and it's correct speed can be detected.
 
 ### e0_App_Boilerplate
-- Open the example e0_Demo
+- Open the example e0_App_Boilerplate.pde
 - Copy the lines that you just created from the tagProfile.csv or demo.csv files in the previous examples to the demo.csv.
 - Now you can use this processing sketch as a boilerplate to create your own applications.
 
