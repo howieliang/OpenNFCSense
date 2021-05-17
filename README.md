@@ -31,7 +31,7 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - Connect the RC522 NFC reader to the Arduino board as follows (via the Arduino's SPI)
 ![Hardware Configuration](/figures/hardware.png)
 
-## Use the OpenNFCSense API
+## Use the OpenNFCSense API by Examples
 ### e1_SingleTagRotation.pde
 - Open the example e1_SingleTagRotation
 - Attach an NFC tag to anything that spins, such as a fidget spinner.
@@ -74,10 +74,22 @@ Unzip and put the extracted OpenNFCSense folder into the libraries folder of you
 - In the data/tagProfile.csv, You may replace the "Trollety" label to any name (avoid using comma). Likewise, you add more object's UIDs and label to the CSV profile. Save the profile and run the processing sketch again, and your reader should be able to read all of them.
 
 ### e6_SingleTagHovering
-- TBD
+- Open the example e6_SingleTagHovering
+- Attach __1__ NFC tags to anything that moves linearly, such as a boat. Maintain at least 8mm distance between the tag and the reader.
+- Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
+- Open the data/tagProfile.csv in the examples' folder, replace the UID of the "boat" tags with yours. Save the CSV file after it's done.
+- Run the processing sketch again, move the object linearly, and then you will see the object's info, the movement direction and speed shown on the screen as "Recent tag: [Label] is sliding at ? km/h". **This speed is not current yet.** We measure the tag activation path length using a ruler. By checking the moving bar on the screen, we can get the reader of the path activation length as X mm.
+- In the data/tagProfile.csv, replace the L1 from 43.0 to the X that you measured (e.g., 39.0 when X=39mm). You may replace the "Boat" label to any name (avoid using comma). Save the profile and run the processing sketch again, and **your reader will be able to read the correct speed** of the tag movement.
+- Likewise, you can add more object's UIDs, label, and L1 to the CSV profile. 
 
-### e7_SingleTagSliding
-- TBD
+### e7_SingleTagSlidingHovering
+- Open the example e7_SingleTagSlidingHovering
+- Attach __2__ NFC tags to anything that moves linearly, such as a boat. Maintain at least 8mm distance between the tag and the reader.
+- Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
+- Open the data/tagProfile.csv in the examples' folder, replace the UID of the "boat" tags with yours. Save the CSV file after it's done.
+- Run the processing sketch again, move the object linearly, and then you will see the object's info, the movement direction and speed shown on the screen as "Recent tag: [Label] is sliding at ? km/h". **This speed is not current yet.** We measure the tag activation path length using a ruler. By checking the moving bar on the screen, we can get the reader of the path activation length as X mm.
+- In the data/tagProfile.csv, replace the L1 from 43.0 to the X that you measured (e.g., 39.0 when X=39mm). You may replace the "Boat" label to any name (avoid using comma). Save the profile and run the processing sketch again, and **your reader will be able to read the correct speed** of the tag movement.
+- Likewise, you can add more object's UIDs, label, and L1 to the CSV profile. 
 
 ### e8_SingleTiltedTagSliding
 - TBD
