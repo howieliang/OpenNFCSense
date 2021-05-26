@@ -1,7 +1,7 @@
 # OpenNFCSense API
 Open-source API of NFCSense for the Processing programming environment (http://processing.org/). Please refer to the following workflow to start experiencing the NFCSense!
 
-by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 17, 2021)
+by [Dr. Rong-Hao Liang](https://ronghaoliang.page) (Last update: May 26, 2021)
 
 _Now it's **V2: Basic Tutorial and Examples** are available!_
 
