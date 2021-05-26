@@ -16,9 +16,9 @@ _Now it's **V2: Basic Tutorial and Examples** are available!_
 
 ## NFCSense Video Tutorials
 [![IMAGE ALT TEXT HERE](figures/playlist.png)](https://youtube.com/playlist?list=PLSgbdfV4TB2f16s4GMy_-1ZMu_zGP9QIH)
-[Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
-[Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
-[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
+- [Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
+- [Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
+- [Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
 ### All the examples shown in the videos are in the /examples folder
 
 ## Prerequisite (for V2)
