@@ -14,6 +14,13 @@ _Now it's **V2: Basic Tutorial and Examples** are available!_
 - [HTML](https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445214)
 - [PDF](https://dl.acm.org/doi/pdf/10.1145/3411764.3445214)
 
+## NFCSense Video Tutorials
+[![IMAGE ALT TEXT HERE](https://youtube.com/playlist?list=PLSgbdfV4TB2f16s4GMy_-1ZMu_zGP9QIH/0.jpg)](https://youtube.com/playlist?list=PLSgbdfV4TB2f16s4GMy_-1ZMu_zGP9QIH)
+[Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
+[Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
+[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
+### All the examples shown in the videos are in the /examples folder
+
 ## Prerequisite (for V2)
 - 1x Arduino Uno board
 - 1x RC522 NFC reader
@@ -23,16 +30,20 @@ _Now it's **V2: Basic Tutorial and Examples** are available!_
 ## Download (/download)
 The OpenNFCSense API V2 of the Processing Library (OpenNFCSense4P-2.zip) in zip format.
 
-### Install the processing library - OpenNFCSense API
+### Install the processing library - OpenNFCSense API 
+[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
 Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder. Then, Restart your Processing software. New examples can be found in the processing library.
 
 ## Preparation: Upload the Arduino code (/arduino) and Connect the Reader
+[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
 - Upload the arduino code to your Arduino board first! This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino.
 - Connect the RC522 NFC reader to the Arduino board as follows (via the Arduino's SPI)
 ![Hardware Configuration](/figures/hardware.png)
 
 ## Use the OpenNFCSense API by Examples
 ### e1_SingleTagRotation
+[Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
+[Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
 - Open the example e1_SingleTagRotation.pde
 - Attach an NFC tag to anything that spins, such as a fidget spinner.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
