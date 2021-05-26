@@ -31,20 +31,19 @@ _Now it's **V2: Basic Tutorial and Examples** are available!_
 The OpenNFCSense API V2 of the Processing Library (OpenNFCSense4P-2.zip) in zip format.
 
 ### Install the processing library - OpenNFCSense API 
-[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
-
-Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder. Then, Restart your Processing software. New examples can be found in the processing library.
+- Video: [Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
+- Unzip and put the extracted OpenNFCSense folder into the libraries folder of your Processing sketches. Reference and examples are included in the OpenNFCSense folder. Then, Restart your Processing software. New examples can be found in the processing library.
 
 ## Preparation: Upload the Arduino code (/arduino) and Connect the Reader
-[Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
+- Video: [Episode 0: Setting Up the OpenNFCSense API](https://youtu.be/Gal2keOJShM)
 - Upload the arduino code to your Arduino board first! This software works with a microcontroller connected to an RC522 NFC/RFID Reader and run the Arduino code: NFCSense4P_ArduinoUno_RC522_v1.ino.
 - Connect the RC522 NFC reader to the Arduino board as follows (via the Arduino's SPI)
 ![Hardware Configuration](/figures/hardware.png)
 
 ## Use the OpenNFCSense API by Examples
 ### e1_SingleTagRotation
-[Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
-[Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
+- Video: [Episode 1: Making Toys with Things That Rotate](https://youtu.be/jzElM6CWH4s)
+- Video: [Episode 2: Making Educational Toys with Lego Bricks](https://youtu.be/lkaZDMGdLuQ)
 - Open the example e1_SingleTagRotation.pde
 - Attach an NFC tag to anything that spins, such as a fidget spinner.
 - Run the processing sketch, scan the tag, and keep the tag's 4-byte Universal ID (UID0,UID1,UID2,UID3) shown in the console. Close the processing sketch.
